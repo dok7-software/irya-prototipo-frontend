@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4 · Confirma tu teléfono · RUTA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#251D44}a:hover{color:#000000}
+.otp{font-family:'IBM Plex Mono',monospace;text-align:center;font-size:22px}
+</style>
+<style>
+html, body.shell { margin: 0; min-height: 100%; background: #ECEAF3; }
+body.shell { font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #251D44; }
+.shell-bar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px; justify-content: space-between;
+  padding: 10px 16px; background: #251D44; color: #FFFFFF; font-size: 13px; }
+.shell-bar a { color: #D1F383; font-weight: 600; text-decoration: none; }
+.shell-bar span { opacity: .8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.shell-stage { display: flex; justify-content: center; padding: 24px 16px 48px; }
+#dc-root { flex: none; background: #FFFFFF; border-radius: 28px; overflow: hidden; box-shadow: 0 18px 50px rgba(37,29,68,.22); }
+@media (max-width: 480px) {
+  .shell-stage { padding: 0; }
+  #dc-root { border-radius: 0; box-shadow: none; }
+}
+</style>
+<script src="runtime.js"></script>
+</head>
+<body class="shell">
+<div class="shell-bar"><a href="../index.html">← Todas las pantallas</a><span>4 · Confirma tu teléfono</span><a href="Main.html">Reiniciar demo</a></div>
+<div class="shell-stage"><div id="dc-root" style="width: 390px; min-height: 844px;"></div></div>
+<script type="application/json" id="dc-template">"<div style=\"position: relative; width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #251D44; font-family: 'IBM Plex Sans', system-ui, sans-serif;\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; height: 56px; padding: 0 6px; border-bottom: 1px solid #E4E1EE; flex: none;\">\n<a href=\"reg_03-confirmar-correo.dc.html\" aria-label=\"Volver\" style=\"width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #251D44;\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 19l-7-7 7-7\"><\/path><\/svg><\/a>\n<div style=\"font-size: 16px; font-weight: 700;\">Confirma tu teléfono<\/div>\n<span style=\"width: 44px;\"><\/span>\n<\/div>\n<div style=\"flex-grow: 1; display: flex; flex-direction: column; gap: 22px; padding: 24px 20px 0; overflow: hidden;\">\n<div><h1 style=\"margin: 0; font-size: 24px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em;\">Ingresa el código<\/h1><p style=\"margin: 6px 0 0; font-size: 15px; color: #5B5670; line-height: 1.45;\">Lo enviamos por SMS a +51 945 274 118.<\/p><\/div>\n<div style=\"display: flex; gap: 8px; justify-content: space-between;\">\n<input class=\"otp\" maxlength=\"1\" inputmode=\"numeric\" value=\"{{ d.a }}\" onChange=\"{{ set.a }}\" style=\"width: 46px; height: 56px; box-sizing: border-box; border: 1.5px solid {{ st.a }}; border-radius: 10px; color: #251D44; background: #FFFFFF;\">\n<input class=\"otp\" maxlength=\"1\" inputmode=\"numeric\" value=\"{{ d.b }}\" onChange=\"{{ set.b }}\" style=\"width: 46px; height: 56px; box-sizing: border-box; border: 1.5px solid {{ st.b }}; border-radius: 10px; color: #251D44; background: #FFFFFF;\">\n<input class=\"otp\" maxlength=\"1\" inputmode=\"numeric\" value=\"{{ d.c }}\" onChange=\"{{ set.c }}\" style=\"width: 46px; height: 56px; box-sizing: border-box; border: 1.5px solid {{ st.c }}; border-radius: 10px; color: #251D44; background: #FFFFFF;\">\n<input class=\"otp\" maxlength=\"1\" inputmode=\"numeric\" value=\"{{ d.d }}\" onChange=\"{{ set.d }}\" style=\"width: 46px; height: 56px; box-sizing: border-box; border: 1.5px solid {{ st.d }}; border-radius: 10px; color: #251D44; background: #FFFFFF;\">\n<input class=\"otp\" maxlength=\"1\" inputmode=\"numeric\" value=\"{{ d.e }}\" onChange=\"{{ set.e }}\" style=\"width: 46px; height: 56px; box-sizing: border-box; border: 1.5px solid {{ st.e }}; border-radius: 10px; color: #251D44; background: #FFFFFF;\">\n<input class=\"otp\" maxlength=\"1\" inputmode=\"numeric\" value=\"{{ d.f }}\" onChange=\"{{ set.f }}\" style=\"width: 46px; height: 56px; box-sizing: border-box; border: 1.5px solid {{ st.f }}; border-radius: 10px; color: #251D44; background: #FFFFFF;\">\n<\/div>\n<div style=\"display: flex; flex-direction: column; gap: 4px;\">\n<sc-if value=\"{{ resent }}\" hint-placeholder-val=\"{{ false }}\"><span style=\"font-size: 13.5px; color: #251D44; font-weight: 600;\">Código reenviado.<\/span><\/sc-if>\n<sc-if value=\"{{ notResent }}\" hint-placeholder-val=\"{{ true }}\"><button type=\"button\" onClick=\"{{ resend }}\" style=\"align-self: flex-start; background: none; border: none; font-family: inherit; font-size: 13.5px; font-weight: 600; color: #251D44; cursor: pointer; padding: 4px 0;\">Reenviar código<\/button><\/sc-if>\n<\/div>\n<p style=\"margin: 0; font-size: 13px; color: #6E6985; line-height: 1.45;\">Si tu país no exige verificar el teléfono, puedes continuar sin este paso. <a href=\"reg_05-perfil.dc.html\" style=\"color: #251D44; font-weight: 600;\">Omitir por ahora<\/a><\/p>\n<\/div>\n<div style=\"flex: none; display: flex; flex-direction: column; gap: 10px; padding: 14px 20px 24px; border-top: 1px solid #E4E1EE;\">\n<a href=\"reg_05-perfil.dc.html\" onClick=\"{{ guard }}\" style=\"display: flex; align-items: center; justify-content: center; gap: 8px; height: 52px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; box-sizing: border-box; {{ btnStyle }}\">Continuar<\/a>\n<\/div>\n<\/div>"</script>
+<script type="text/x-dc" id="dc-logic">
+class Component extends DCLogic {
+  cur() {
+    var s = this.state || {};
+    return { d: Object.assign({ a: '', b: '', c: '', d: '', e: '', f: '' }, s.d || {}), resent: !!s.resent };
+  }
+  renderVals() {
+    var self = this;
+    var s = this.cur();
+    var keys = ['a', 'b', 'c', 'd', 'e', 'f'];
+    var set = {}, st = {};
+    keys.forEach(function (k) {
+      set[k] = function (e) { var v = (e.target.value || '').replace(/\D/g, '').slice(-1); self.setState({ d: Object.assign({}, self.cur().d, { [k]: v }) }); };
+      st[k] = s.d[k] ? '#251D44' : '#A9A4BC';
+    });
+    var full = keys.every(function (k) { return s.d[k] !== ''; });
+    return {
+      d: s.d, set: set, st: st,
+      resent: s.resent, notResent: !s.resent,
+      resend: function () { self.setState({ resent: true }); },
+      valid: full,
+      btnStyle: full ? 'background: #251D44; color: #FFFFFF;' : 'background: #E4E1EE; color: #6E6985; pointer-events: none;',
+      guard: function (e) { if (!full) { e.preventDefault(); } }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Completa tu perfil</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#251D44}a:hover{color:#000000}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #251D44; font-family: 'IBM Plex Sans', system-ui, sans-serif;">
+<div style="display: flex; align-items: center; justify-content: space-between; height: 56px; padding: 0 6px; border-bottom: 1px solid #E4E1EE; flex: none;">
+<a href="reg_04-telefono.dc.html" aria-label="Volver" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #251D44;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 19l-7-7 7-7"></path></svg></a>
+<div style="font-size: 16px; font-weight: 700;">Completa tu perfil</div>
+<span style="width: 44px;"></span>
+</div>
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 18px; padding: 18px 20px 0; overflow: hidden;">
+<div><h1 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em;">¿Cómo te llamas?</h1><p style="margin: 6px 0 0; font-size: 15px; color: #5B5670; line-height: 1.45;">Así te verán los demás viajeros.</p></div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; flex-direction: column; gap: 6px;"><label for="nom" style="font-size: 14px; font-weight: 600;">Nombre</label><input id="nom" type="text" placeholder="Lucía" value="{{ v.nom }}" onChange="{{ set.nom }}" style="height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;"></div>
+<div style="display: flex; flex-direction: column; gap: 6px;"><label for="ape" style="font-size: 14px; font-weight: 600;">Apellido</label><input id="ape" type="text" placeholder="Rojas" value="{{ v.ape }}" onChange="{{ set.ape }}" style="height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;"></div>
+</div>
+<label for="terms" style="display: flex; gap: 10px; align-items: flex-start; cursor: pointer;"><input id="terms" type="checkbox" checked="{{ v.terms }}" onChange="{{ toggleTerms }}" style="width: 20px; height: 20px; margin: 1px 0 0; accent-color: #251D44; flex: none;"><span style="font-size: 13.5px; color: #5B5670; line-height: 1.45;">Acepto los <span style="color: #251D44; font-weight: 600;">Términos de uso</span> y la <span style="color: #251D44; font-weight: 600;">Política de Privacidad</span> de RUTA.</span></label>
+</div>
+<div style="flex: none; display: flex; flex-direction: column; gap: 10px; padding: 14px 20px 24px; border-top: 1px solid #E4E1EE;">
+<a href="reg_06-cuenta-creada.dc.html" onClick="{{ guard }}" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 52px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; box-sizing: border-box; {{ btnStyle }}">Crear cuenta</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  cur() {
+    var s = this.state || {};
+    return { v: Object.assign({ nom: '', ape: '', terms: false }, s.v || {}) };
+  }
+  renderVals() {
+    var self = this;
+    var s = this.cur();
+    var set = {
+      nom: function (e) { self.setState({ v: Object.assign({}, self.cur().v, { nom: e.target.value }) }); },
+      ape: function (e) { self.setState({ v: Object.assign({}, self.cur().v, { ape: e.target.value }) }); }
+    };
+    var valid = s.v.nom.trim().length > 0 && s.v.ape.trim().length > 0 && s.v.terms;
+    return {
+      v: s.v, set: set,
+      toggleTerms: function () { self.setState({ v: Object.assign({}, self.cur().v, { terms: !self.cur().v.terms }) }); },
+      valid: valid,
+      btnStyle: valid ? 'background: #251D44; color: #FFFFFF;' : 'background: #E4E1EE; color: #6E6985; pointer-events: none;',
+      guard: function (e) { if (!valid) { e.preventDefault(); } }
+    };
+  }
+}
+</script>
+</body>
+</html>

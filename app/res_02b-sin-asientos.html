@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4b · Asientos insuficientes · RUTA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#251D44}a:hover{color:#000000}
+</style>
+<style>
+html, body.shell { margin: 0; min-height: 100%; background: #ECEAF3; }
+body.shell { font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #251D44; }
+.shell-bar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px; justify-content: space-between;
+  padding: 10px 16px; background: #251D44; color: #FFFFFF; font-size: 13px; }
+.shell-bar a { color: #D1F383; font-weight: 600; text-decoration: none; }
+.shell-bar span { opacity: .8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.shell-stage { display: flex; justify-content: center; padding: 24px 16px 48px; }
+#dc-root { flex: none; background: #FFFFFF; border-radius: 28px; overflow: hidden; box-shadow: 0 18px 50px rgba(37,29,68,.22); }
+@media (max-width: 480px) {
+  .shell-stage { padding: 0; }
+  #dc-root { border-radius: 0; box-shadow: none; }
+}
+</style>
+<script src="runtime.js"></script>
+</head>
+<body class="shell">
+<div class="shell-bar"><a href="../index.html">← Todas las pantallas</a><span>4b · Asientos insuficientes</span><a href="Main.html">Reiniciar demo</a></div>
+<div class="shell-stage"><div id="dc-root" style="width: 390px; min-height: 1120px;"></div></div>
+<script type="application/json" id="dc-template">"<div style=\"position: relative; width: 390px; height: 1120px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #251D44; font-family: 'IBM Plex Sans', system-ui, sans-serif;\">\n<div style=\"display: flex; align-items: center; justify-content: space-between; height: 56px; padding: 0 6px; border-bottom: 1px solid #E4E1EE; flex: none;\">\n<a href=\"res_Main.dc.html\" aria-label=\"Volver\" style=\"width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #251D44;\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 18l-6-6 6-6\"><\/path><\/svg><\/a>\n<div style=\"font-size: 16px; font-weight: 700;\">Reservar<\/div>\n<span style=\"width: 44px;\"><\/span>\n<\/div>\n<div style=\"padding: 14px 20px 0; flex: none;\">\n<div style=\"display: flex; justify-content: space-between; font-size: 13px; color: #5B5670;\"><span>Paso 2 de 4<\/span><span style=\"font-weight: 700; color: #251D44;\">Viajeros<\/span><\/div>\n<div style=\"height: 6px; background: #EEEBFD; border-radius: 3px; margin-top: 8px;\"><div style=\"width: 50.0%; height: 6px; background: #251D44; border-radius: 3px;\"><\/div><\/div>\n<\/div>\n\n<div style=\"flex-grow: 1; display: flex; flex-direction: column; gap: 18px; padding: 18px 20px; overflow: hidden;\">\n<div><h1 style=\"margin: 0; font-size: 24px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em;\">¿Cuántos viajan?<\/h1><p style=\"margin: 6px 0 0; font-size: 15px; color: #5B5670; line-height: 1.45;\">Tú ya estás verificado. Declara a quienes te acompañan.<\/p><\/div><div style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border: 1.5px solid #E4E1EE; border-radius: 12px;\">\n<button type=\"button\" aria-label=\"Quitar uno\" onClick=\"{{ dec }}\" disabled=\"{{ atMin }}\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1.5px solid #251D44; background: #FFFFFF; color: #251D44; display: flex; align-items: center; justify-content: center; cursor: pointer;\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 12h12\"><\/path><\/svg><\/button>\n<div style=\"text-align: center;\"><div style=\"font-size: 32px; font-weight: 700; line-height: 1;\">{{ count }}<\/div><div style=\"font-size: 13px; color: #5B5670;\">asientos en este tramo<\/div><\/div>\n<button type=\"button\" aria-label=\"Añadir uno\" onClick=\"{{ inc }}\" disabled=\"{{ atMax }}\" style=\"width: 44px; height: 44px; border-radius: 22px; border: 1.5px solid #251D44; background: #FFFFFF; color: #251D44; display: flex; align-items: center; justify-content: center; cursor: pointer;\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 6v12M6 12h12\"><\/path><\/svg><\/button>\n<\/div><div style=\"display: flex; gap: 6px; align-items: flex-start; font-size: 13px; color: #B3261E; line-height: 1.4;\"><span style=\"display: flex; flex: none; margin-top: 1px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"><\/circle><path d=\"M12 7v6M12 16.5v.5\"><\/path><\/svg><\/span><span>Solo queda 1 asiento libre en este tramo.<\/span><\/div><sc-if value=\"{{ over }}\" hint-placeholder-val=\"{{ true }}\"><div style=\"display: flex; gap: 10px; padding: 12px 14px; border-radius: 12px; background: #FCEEEE; color: #B3261E; font-size: 14px; line-height: 1.45;\"><span style=\"display: flex; flex: none; color: #B3261E; margin-top: 1px;\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"><\/circle><path d=\"M12 7v6M12 16.5v.5\"><\/path><\/svg><\/span><div><div style=\"font-weight: 600; margin-bottom: 2px;\">Solo quedan 1 asientos en este tramo<\/div>Reduce la cantidad o elige otro tramo.<\/div><\/div><\/sc-if><sc-if value=\"{{ has2 }}\" hint-placeholder-val=\"{{ true }}\"><div style=\"display: flex; flex-direction: column; gap: 10px; padding: 14px; border: 1.5px solid #E4E1EE; border-radius: 12px;\">\n<div style=\"font-size: 14px; font-weight: 700;\">Acompañante 1<\/div>\n<input id=\"cn2\" type=\"text\" value=\"{{ v.cn2 }}\" onChange=\"{{ set.cn2 }}\" placeholder=\"Nombre y apellido\" style=\"height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;\">\n<input id=\"cc2\" type=\"text\" value=\"{{ v.cc2 }}\" onChange=\"{{ set.cc2 }}\" placeholder=\"Celular o correo\" style=\"height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;\">\n<div style=\"font-size: 12px; color: #5B5670; line-height: 1.4;\">Le enviaremos un enlace para verificar su identidad.<\/div>\n<\/div><\/sc-if><sc-if value=\"{{ has3 }}\" hint-placeholder-val=\"{{ true }}\"><div style=\"display: flex; flex-direction: column; gap: 10px; padding: 14px; border: 1.5px solid #E4E1EE; border-radius: 12px;\">\n<div style=\"font-size: 14px; font-weight: 700;\">Acompañante 2<\/div>\n<input id=\"cn3\" type=\"text\" value=\"{{ v.cn3 }}\" onChange=\"{{ set.cn3 }}\" placeholder=\"Nombre y apellido\" style=\"height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;\">\n<input id=\"cc3\" type=\"text\" value=\"{{ v.cc3 }}\" onChange=\"{{ set.cc3 }}\" placeholder=\"Celular o correo\" style=\"height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;\">\n<div style=\"font-size: 12px; color: #5B5670; line-height: 1.4;\">Le enviaremos un enlace para verificar su identidad.<\/div>\n<\/div><\/sc-if><sc-if value=\"{{ has4 }}\" hint-placeholder-val=\"{{ true }}\"><div style=\"display: flex; flex-direction: column; gap: 10px; padding: 14px; border: 1.5px solid #E4E1EE; border-radius: 12px;\">\n<div style=\"font-size: 14px; font-weight: 700;\">Acompañante 3<\/div>\n<input id=\"cn4\" type=\"text\" value=\"{{ v.cn4 }}\" onChange=\"{{ set.cn4 }}\" placeholder=\"Nombre y apellido\" style=\"height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;\">\n<input id=\"cc4\" type=\"text\" value=\"{{ v.cc4 }}\" onChange=\"{{ set.cc4 }}\" placeholder=\"Celular o correo\" style=\"height: 48px; box-sizing: border-box; border: 1.5px solid #A9A4BC; border-radius: 10px; padding: 0 14px; font-family: inherit; font-size: 16px; color: #251D44; background: #FFFFFF; width: 100%;\">\n<div style=\"font-size: 12px; color: #5B5670; line-height: 1.4;\">Le enviaremos un enlace para verificar su identidad.<\/div>\n<\/div><\/sc-if>\n<\/div>\n<div style=\"flex: none; display: flex; flex-direction: column; gap: 10px; padding: 14px 20px 24px; border-top: 1px solid #E4E1EE;\">\n<sc-if value=\"{{ okSeats }}\" hint-placeholder-val=\"{{ true }}\"><a href=\"res_03-metodo-pago.dc.html\" style=\"display: flex; align-items: center; justify-content: center; gap: 8px; height: 52px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; box-sizing: border-box; background: #251D44; color: #FFFFFF;\">Continuar<\/a><\/sc-if><sc-if value=\"{{ over }}\" hint-placeholder-val=\"{{ true }}\"><button type=\"button\" disabled=\"disabled\" style=\"display: flex; align-items: center; justify-content: center; gap: 8px; height: 52px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; box-sizing: border-box; width: 100%; border: none; background: #E4E1EE; color: #6E6985; font-family: inherit;\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"><\/rect><path d=\"M8 11V8a4 4 0 018 0v3\"><\/path><\/svg>Continuar<\/button><\/sc-if>\n<\/div>\n<sc-if value=\"{{ toast }}\" hint-placeholder-val=\"{{ true }}\"><div style=\"position: absolute; left: 20px; right: 20px; bottom: 96px; display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-radius: 12px; background: #251D44; color: #FFFFFF; font-size: 14px; font-weight: 600;\"><span style=\"display: flex; color: #D1F383;\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12l5 5 9-10\"><\/path><\/svg><\/span>Borrador guardado<\/div><\/sc-if>\n<\/div>"</script>
+<script type="text/x-dc" id="dc-logic">
+class Component extends DCLogic {
+  data() { return { INIT: {"v": {"cn2": "Diego Rojas", "cc2": "912 345 678", "cn3": "", "cc3": "", "cn4": "", "cc4": ""}, "r": {}, "c": {}, "count": 2, "toast": false}, CFG: {"opts": {}, "stops": [], "lo": 1, "hi": 4, "SEL": "border: 2px solid #251D44; background: #F3FBE1;", "UNSEL": "border: 1.5px solid #E4E1EE; background: #FFFFFF;", "CHON": "background: #D1F383; border: 1.5px solid #251D44; color: #251D44;", "CHOFF": "background: #FFFFFF; border: 1.5px solid #E4E1EE; color: #251D44;", "ERRTA": "border-color: #B3261E; background: #FCEEEE;"} }; }
+  cur() {
+    var INIT = this.data().INIT;
+    var s = this.state || {};
+    return {
+      v: Object.assign({}, INIT.v, s.v || {}),
+      r: Object.assign({}, INIT.r, s.r || {}),
+      c: Object.assign({}, INIT.c, s.c || {}),
+      count: (s.count === undefined ? INIT.count : s.count),
+      toast: !!s.toast
+    };
+  }
+  renderVals() {
+    var self = this;
+    var CFG = this.data().CFG;
+    var s = this.cur();
+    function up(key, patch) { var c = self.cur(); var o = {}; o[key] = Object.assign({}, c[key], patch); self.setState(o); }
+    var set = {};
+    Object.keys(s.v).forEach(function (k) { set[k] = function (e) { var p = {}; p[k] = e.target.value; up('v', p); }; });
+    var r = {}, pick = {}, st = {}, cst = {}, apr = {};
+    Object.keys(CFG.opts).forEach(function (g) {
+      CFG.opts[g].forEach(function (id) {
+        var k = g + '_' + id, on = s.r[g] === id;
+        r[k] = on; st[k] = on ? CFG.SEL : CFG.UNSEL; cst[k] = on ? CFG.CHON : CFG.CHOFF; apr[k] = on ? 'true' : 'false';
+        pick[k] = function () { var p = {}; p[g] = id; up('r', p); };
+      });
+    });
+    var c = {}, n = {}, tog = {}, cs = {}, ap = {};
+    Object.keys(s.c).forEach(function (k) {
+      var on = !!s.c[k];
+      c[k] = on; n[k] = !on; cs[k] = on ? CFG.CHON : CFG.CHOFF; ap[k] = on ? 'true' : 'false';
+      tog[k] = function () { var p = {}; p[k] = !self.cur().c[k]; up('c', p); };
+    });
+    var parts = [s.v.org || 'Origen'];
+    CFG.stops.forEach(function (st2) { if (s.c[st2[0]]) parts.push(st2[1]); });
+    parts.push(s.v.dst || 'Destino');
+    var desc = s.v.desc || '';
+    var bad = /(\d[\s.-]?){7,}|https?:|www\.|@\w/.test(desc);
+    var declOk = !!(s.c.d1 && s.c.d2 && s.c.d3);
+    var X = (function () { if (true) return { has2: s.count >= 2, has3: s.count >= 3, has4: s.count >= 4, over: s.count > 1, okSeats: s.count <= 1 }; return {}; })();
+    return Object.assign({
+      v: s.v, set: set, r: r, pick: pick, st: st, cst: cst, apr: apr,
+      c: c, n: n, tog: tog, cs: cs, ap: ap,
+      count: s.count, atMin: s.count <= CFG.lo, atMax: s.count >= CFG.hi,
+      dec: function () { var k = self.cur().count; if (k > CFG.lo) self.setState({ count: k - 1 }); },
+      inc: function () { var k = self.cur().count; if (k < CFG.hi) self.setState({ count: k + 1 }); },
+      swap: function () { var cv = self.cur().v; up('v', { org: cv.dst, dst: cv.org }); },
+      toast: s.toast,
+      save: function () { self.setState({ toast: true }); setTimeout(function () { self.setState({ toast: false }); }, 1800); },
+      routeText: parts.join('  →  '),
+      len: desc.length, bad: bad, good: !bad, taStyle: bad ? CFG.ERRTA : '',
+      declOk: declOk, declNo: !declOk
+    }, X);
+  }
+}
+</script>
+</body>
+</html>

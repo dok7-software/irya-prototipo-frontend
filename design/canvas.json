@@ -1,0 +1,1158 @@
+{
+ "v": 3,
+ "attachments": {},
+ "boards": {
+  "Main.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "Inicio · Bienvenida",
+   "w": 390,
+   "x": 0,
+   "y": 0
+  },
+  "eje_02-facial.dc.html": {
+   "h": 960,
+   "is_interactive": true,
+   "title": "C2 · Verificación facial",
+   "w": 390,
+   "x": 470,
+   "y": 17320
+  },
+  "eje_03-facial-fallo.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "C3 · Verificación no superada",
+   "w": 390,
+   "x": 470,
+   "y": 18440
+  },
+  "eje_04-bloqueado.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "C4 · Viaje bloqueado",
+   "w": 390,
+   "x": 470,
+   "y": 19520
+  },
+  "eje_05-abordaje.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "C5 · Abordaje de viajeros",
+   "w": 390,
+   "x": 940,
+   "y": 17320
+  },
+  "eje_06-escanear.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "C6 · Escanear código",
+   "w": 390,
+   "x": 940,
+   "y": 18440
+  },
+  "eje_07-abordado.dc.html": {
+   "h": 1060,
+   "is_interactive": true,
+   "title": "C7 · Viajero abordado · pagado con tarjeta",
+   "w": 390,
+   "x": 1410,
+   "y": 17320
+  },
+  "eje_07b-abordado-efectivo.dc.html": {
+   "h": 1060,
+   "is_interactive": true,
+   "title": "C7b · Sube en Asia · cobro en efectivo",
+   "w": 390,
+   "x": 2350,
+   "y": 18440
+  },
+  "eje_08-marcar-ausente.dc.html": {
+   "h": 1040,
+   "is_interactive": true,
+   "title": "C8 · Marcar ausente",
+   "w": 390,
+   "x": 1410,
+   "y": 18440
+  },
+  "eje_09-en-curso.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "C9 · Viaje en curso",
+   "w": 390,
+   "x": 1880,
+   "y": 17320
+  },
+  "eje_10-registrar-llegada.dc.html": {
+   "h": 1020,
+   "is_interactive": true,
+   "title": "C10 · Llegada del tramo · Asia",
+   "w": 390,
+   "x": 2350,
+   "y": 17320
+  },
+  "eje_11-llegada.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "C11 · Esperando confirmación",
+   "w": 390,
+   "x": 2820,
+   "y": 17320
+  },
+  "eje_12-reporte.dc.html": {
+   "h": 960,
+   "is_interactive": true,
+   "title": "C12 · Reporte libre",
+   "w": 390,
+   "x": 2820,
+   "y": 18440
+  },
+  "eje_Main.dc.html": {
+   "h": 1000,
+   "is_interactive": true,
+   "title": "C1 · Viaje de hoy · abrir",
+   "w": 390,
+   "x": 0,
+   "y": 17320
+  },
+  "eje_P1-codigo.dc.html": {
+   "h": 1002,
+   "is_interactive": true,
+   "title": "P1 · Código de abordaje",
+   "w": 390,
+   "x": 0,
+   "y": 20744
+  },
+  "eje_P10-reporte.dc.html": {
+   "h": 960,
+   "is_interactive": true,
+   "title": "P10 · Reportar un problema",
+   "w": 390,
+   "x": 1880,
+   "y": 20744
+  },
+  "eje_P2-no-llego.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "P2 · El conductor no llegó",
+   "w": 390,
+   "x": 0,
+   "y": 21804
+  },
+  "eje_P3-ausente.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "P3 · Te marcaron ausente",
+   "w": 390,
+   "x": 0,
+   "y": 22864
+  },
+  "eje_P4-en-curso.dc.html": {
+   "h": 1002,
+   "is_interactive": true,
+   "title": "P4 · Viaje en curso",
+   "w": 390,
+   "x": 470,
+   "y": 20744
+  },
+  "eje_P5-compartir.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "P5 · Compartir viaje",
+   "w": 390,
+   "x": 470,
+   "y": 21804
+  },
+  "eje_P6-sos.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "P6 · SOS · confirmar",
+   "w": 390,
+   "x": 940,
+   "y": 20744
+  },
+  "eje_P7-sos-enviada.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "P7 · SOS · alerta enviada",
+   "w": 390,
+   "x": 940,
+   "y": 21804
+  },
+  "eje_P8-confirmar.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "P8 · Confirmar llegada",
+   "w": 390,
+   "x": 1410,
+   "y": 20744
+  },
+  "eje_P9-completado.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "P9 · Llegada confirmada",
+   "w": 390,
+   "x": 1410,
+   "y": 21804
+  },
+  "hub_c_avisos.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Conductor · Avisos",
+   "w": 390,
+   "x": 3290,
+   "y": 0
+  },
+  "hub_c_inicio.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Conductor · Inicio",
+   "w": 390,
+   "x": 2350,
+   "y": 0
+  },
+  "hub_c_perfil.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Conductor · Perfil",
+   "w": 390,
+   "x": 3760,
+   "y": 0
+  },
+  "hub_c_viajes.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Conductor · Viajes",
+   "w": 390,
+   "x": 2820,
+   "y": 0
+  },
+  "hub_p_avisos.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Pasajero · Avisos",
+   "w": 390,
+   "x": 1410,
+   "y": 0
+  },
+  "hub_p_cupones.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Pasajero · Cupones",
+   "w": 390,
+   "x": 1880,
+   "y": 1340
+  },
+  "hub_p_editar.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "Pasajero · Editar perfil",
+   "w": 390,
+   "x": 1410,
+   "y": 1340
+  },
+  "hub_p_inicio.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "Pasajero · Inicio",
+   "w": 390,
+   "x": 470,
+   "y": 0
+  },
+  "hub_p_pagos.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Pasajero · Métodos de pago",
+   "w": 390,
+   "x": 2350,
+   "y": 1340
+  },
+  "hub_p_perfil.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Pasajero · Perfil",
+   "w": 390,
+   "x": 1880,
+   "y": 0
+  },
+  "hub_p_viajes.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "Pasajero · Mis viajes",
+   "w": 390,
+   "x": 940,
+   "y": 0
+  },
+  "pub_01b-precondiciones-rechazo.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "0b · Precondiciones pendientes",
+   "w": 390,
+   "x": 0,
+   "y": 26384
+  },
+  "pub_02-vehiculo.dc.html": {
+   "h": 930,
+   "is_interactive": true,
+   "title": "1b · Pantalla 1 con el selector abierto",
+   "w": 390,
+   "x": 470,
+   "y": 26384
+  },
+  "pub_03-origen-destino.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "0a · Retomar borrador",
+   "w": 390,
+   "x": 0,
+   "y": 24764
+  },
+  "pub_03b-fuera-cobertura.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "1c · Fuera de cobertura",
+   "w": 390,
+   "x": 470,
+   "y": 27404
+  },
+  "pub_03c-calendario.dc.html": {
+   "h": 980,
+   "is_interactive": true,
+   "title": "3c · Calendario",
+   "w": 390,
+   "x": 1410,
+   "y": 27404
+  },
+  "pub_03d-parada-fuera-ruta.dc.html": {
+   "h": 1020,
+   "is_interactive": true,
+   "title": "1d · Parada fuera de ruta",
+   "w": 390,
+   "x": 470,
+   "y": 28368
+  },
+  "pub_04-punto-encuentro.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "2 · Puntos de recojo y llegada",
+   "w": 390,
+   "x": 940,
+   "y": 24764
+  },
+  "pub_04b-punto-fuera-radio.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "2c · Punto fuera de radio",
+   "w": 390,
+   "x": 940,
+   "y": 27404
+  },
+  "pub_04c-punto-parada.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "2b · Hoja de mapa · recojo en Asia",
+   "w": 390,
+   "x": 940,
+   "y": 26384
+  },
+  "pub_07-fecha-hora.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "3 · Salida y asientos",
+   "w": 390,
+   "x": 1410,
+   "y": 24764
+  },
+  "pub_07b-solape-antelacion.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "3b · Solape o antelación",
+   "w": 390,
+   "x": 1410,
+   "y": 26384
+  },
+  "pub_09-equipaje-reglas.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "4 · Condiciones",
+   "w": 390,
+   "x": 1880,
+   "y": 24764
+  },
+  "pub_10b-dato-contacto.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "4b · Dato de contacto",
+   "w": 390,
+   "x": 1880,
+   "y": 26384
+  },
+  "pub_11-precio.dc.html": {
+   "h": 1240,
+   "is_interactive": true,
+   "title": "5 · Precio por tramo",
+   "w": 390,
+   "x": 2350,
+   "y": 24764
+  },
+  "pub_11b-precio-sobre-tope.dc.html": {
+   "h": 1020,
+   "is_interactive": true,
+   "title": "5b · Tramo fuera de rango",
+   "w": 390,
+   "x": 2350,
+   "y": 26384
+  },
+  "pub_13-revision.dc.html": {
+   "h": 1420,
+   "is_interactive": true,
+   "title": "6 · Revisión y publicación",
+   "w": 390,
+   "x": 2820,
+   "y": 24764
+  },
+  "pub_13b-documento-vence.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "6b · Documento vence antes de la salida",
+   "w": 390,
+   "x": 2820,
+   "y": 26384
+  },
+  "pub_14-publicado.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "7 · Viaje publicado",
+   "w": 390,
+   "x": 3290,
+   "y": 24764
+  },
+  "pub_15-mi-viaje.dc.html": {
+   "h": 1320,
+   "is_interactive": true,
+   "title": "8 · Mi viaje publicado",
+   "w": 390,
+   "x": 3760,
+   "y": 24764
+  },
+  "pub_16-reservas.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "9 · Reservas del viaje",
+   "w": 390,
+   "x": 3760,
+   "y": 26204
+  },
+  "pub_Main.dc.html": {
+   "h": 950,
+   "is_interactive": true,
+   "title": "1 · Ruta",
+   "w": 390,
+   "x": 470,
+   "y": 24764
+  },
+  "reg_08-vehiculo.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "Conductor · Vehículo",
+   "w": 390,
+   "x": 3290,
+   "y": 1340
+  },
+  "reg_09-documentos.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "Conductor · Documentos",
+   "w": 390,
+   "x": 3760,
+   "y": 1340
+  },
+  "reg_09b-documento-vencido.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "Conductor · Documento vencido",
+   "w": 390,
+   "x": 5170,
+   "y": 1340
+  },
+  "reg_10-cobros.dc.html": {
+   "h": 960,
+   "is_interactive": true,
+   "title": "Conductor · Medio de cobro",
+   "w": 390,
+   "x": 4230,
+   "y": 1340
+  },
+  "reg_11-preferencias.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "Conductor · Preferencias",
+   "w": 390,
+   "x": 4700,
+   "y": 1340
+  },
+  "reg_A1-invitacion.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "A1 · Enlace del acompañante",
+   "w": 390,
+   "x": 0,
+   "y": 6432
+  },
+  "reg_A2-verificar.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "A2 · Verificación del acompañante",
+   "w": 390,
+   "x": 470,
+   "y": 6432
+  },
+  "reg_A3-codigo.dc.html": {
+   "h": 960,
+   "is_interactive": true,
+   "title": "A3 · Código del acompañante",
+   "w": 390,
+   "x": 940,
+   "y": 6432
+  },
+  "reg_A4-enlace-vencido.dc.html": {
+   "h": 800,
+   "is_interactive": true,
+   "title": "A4 · Enlace vencido",
+   "w": 390,
+   "x": 0,
+   "y": 7512
+  },
+  "reg_A5-recordatorio.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "A5 · Recordatorio al titular",
+   "w": 390,
+   "x": 470,
+   "y": 7512
+  },
+  "res_00-buscador.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "1 · Buscador",
+   "w": 390,
+   "x": 0,
+   "y": 9316
+  },
+  "res_00c-calendario.dc.html": {
+   "h": 980,
+   "is_interactive": true,
+   "title": "1b · Calendario",
+   "w": 390,
+   "x": 0,
+   "y": 11016
+  },
+  "res_01-resultados.dc.html": {
+   "h": 1180,
+   "is_interactive": true,
+   "title": "2 · Resultados",
+   "w": 390,
+   "x": 470,
+   "y": 9316
+  },
+  "res_01b-identidad.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "3b · Identidad sin verificar",
+   "w": 390,
+   "x": 940,
+   "y": 11016
+  },
+  "res_01b-sin-resultados.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "2b · Sin resultados",
+   "w": 390,
+   "x": 470,
+   "y": 11016
+  },
+  "res_01c-filtros.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "2c · Filtros",
+   "w": 390,
+   "x": 470,
+   "y": 12456
+  },
+  "res_01c-mensaje.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "3c · Escribir al conductor",
+   "w": 390,
+   "x": 940,
+   "y": 12456
+  },
+  "res_01d-mensaje-bloqueado.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "3d · Mensaje bloqueado",
+   "w": 390,
+   "x": 940,
+   "y": 13896
+  },
+  "res_01e-perfil-conductor.dc.html": {
+   "h": 1500,
+   "is_interactive": true,
+   "title": "3e · Perfil del conductor",
+   "w": 390,
+   "x": 940,
+   "y": 14860
+  },
+  "res_02-asientos.dc.html": {
+   "h": 1120,
+   "is_interactive": true,
+   "title": "4 · Asientos y acompañantes",
+   "w": 390,
+   "x": 1410,
+   "y": 9316
+  },
+  "res_02b-sin-asientos.dc.html": {
+   "h": 1120,
+   "is_interactive": true,
+   "title": "4b · Asientos insuficientes",
+   "w": 390,
+   "x": 1410,
+   "y": 11016
+  },
+  "res_03-metodo-pago.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "5 · Método de pago",
+   "w": 390,
+   "x": 1880,
+   "y": 9316
+  },
+  "res_03b-efectivo-no.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "5b · Efectivo no disponible",
+   "w": 390,
+   "x": 1880,
+   "y": 11016
+  },
+  "res_04-resumen-tarjeta.dc.html": {
+   "h": 1320,
+   "is_interactive": true,
+   "title": "6 · Resumen y pago",
+   "w": 390,
+   "x": 2350,
+   "y": 9316
+  },
+  "res_04b-resumen-efectivo.dc.html": {
+   "h": 1320,
+   "is_interactive": true,
+   "title": "6b · Resumen en efectivo",
+   "w": 390,
+   "x": 2350,
+   "y": 11016
+  },
+  "res_04c-pago-rechazado.dc.html": {
+   "h": 1440,
+   "is_interactive": true,
+   "title": "6c · Pago rechazado",
+   "w": 390,
+   "x": 2350,
+   "y": 12456
+  },
+  "res_05-confirmada.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "7 · Reserva confirmada",
+   "w": 390,
+   "x": 2820,
+   "y": 9316
+  },
+  "res_05b-esperando.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "7b · Esperando al conductor",
+   "w": 390,
+   "x": 2820,
+   "y": 11016
+  },
+  "res_05c-reembolso.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "7c · Reembolso en camino",
+   "w": 390,
+   "x": 2820,
+   "y": 12456
+  },
+  "res_05d-cancelada.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "7d · Solicitud cancelada",
+   "w": 390,
+   "x": 2820,
+   "y": 13420
+  },
+  "res_06-viajeros.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "8 · Viajeros y verificación",
+   "w": 390,
+   "x": 3290,
+   "y": 9316
+  },
+  "res_06b-sin-verificar.dc.html": {
+   "h": 844,
+   "is_interactive": true,
+   "title": "8b · Acompañante sin verificar",
+   "w": 390,
+   "x": 3290,
+   "y": 11016
+  },
+  "res_07-codigo.dc.html": {
+   "h": 1060,
+   "is_interactive": true,
+   "title": "9 · Código de abordaje",
+   "w": 390,
+   "x": 3760,
+   "y": 9316
+  },
+  "res_Main.dc.html": {
+   "h": 1160,
+   "is_interactive": true,
+   "title": "3 · Detalle del viaje",
+   "w": 390,
+   "x": 940,
+   "y": 9316
+  },
+  "wal_01b-wallet-rojo.dc.html": {
+   "h": 1080,
+   "is_interactive": true,
+   "title": "1b · Wallet en rojo",
+   "w": 390,
+   "x": 0,
+   "y": 31592
+  },
+  "wal_02-movimientos.dc.html": {
+   "h": 1040,
+   "is_interactive": true,
+   "title": "2 · Movimientos",
+   "w": 390,
+   "x": 470,
+   "y": 30172
+  },
+  "wal_03-detalle-efectivo.dc.html": {
+   "h": 1000,
+   "is_interactive": true,
+   "title": "3 · Detalle · cargo en efectivo",
+   "w": 390,
+   "x": 940,
+   "y": 30172
+  },
+  "wal_03b-detalle-digital.dc.html": {
+   "h": 940,
+   "is_interactive": true,
+   "title": "3b · Detalle · abono digital",
+   "w": 390,
+   "x": 940,
+   "y": 31592
+  },
+  "wal_04-recargar.dc.html": {
+   "h": 960,
+   "is_interactive": true,
+   "title": "4 · Recargar",
+   "w": 390,
+   "x": 1410,
+   "y": 30172
+  },
+  "wal_05-recarga-ok.dc.html": {
+   "h": 860,
+   "is_interactive": true,
+   "title": "5 · Recarga exitosa",
+   "w": 390,
+   "x": 1880,
+   "y": 30172
+  },
+  "wal_06-retirar.dc.html": {
+   "h": 860,
+   "is_interactive": true,
+   "title": "6 · Retirar",
+   "w": 390,
+   "x": 2350,
+   "y": 30172
+  },
+  "wal_06b-retirar-bloqueado.dc.html": {
+   "h": 800,
+   "is_interactive": true,
+   "title": "6b · Retiro bloqueado",
+   "w": 390,
+   "x": 2350,
+   "y": 31592
+  },
+  "wal_07-efectivo-bloqueado.dc.html": {
+   "h": 920,
+   "is_interactive": true,
+   "title": "7 · Efectivo bloqueado",
+   "w": 390,
+   "x": 2820,
+   "y": 30172
+  },
+  "wal_07b-publicar-bloqueado.dc.html": {
+   "h": 920,
+   "is_interactive": true,
+   "title": "7b · Publicar bloqueado",
+   "w": 390,
+   "x": 2820,
+   "y": 31592
+  },
+  "wal_08-recordatorio-cierre.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "8 · Recordatorio al cerrar el tramo",
+   "w": 390,
+   "x": 3290,
+   "y": 30172
+  },
+  "wal_09-recordatorio-apertura.dc.html": {
+   "h": 900,
+   "is_interactive": true,
+   "title": "9 · Recordatorio al abrir el viaje",
+   "w": 390,
+   "x": 3290,
+   "y": 31592
+  },
+  "wal_Main.dc.html": {
+   "h": 960,
+   "is_interactive": true,
+   "title": "1 · Wallet · saldo positivo",
+   "w": 390,
+   "x": 0,
+   "y": 30172
+  },
+  "reg_02-correo.dc.html": {
+   "x": 470,
+   "y": 2980,
+   "w": 390,
+   "h": 844,
+   "title": "2 · Crear cuenta con correo",
+   "is_interactive": true
+  },
+  "reg_03-confirmar-correo.dc.html": {
+   "x": 940,
+   "y": 2980,
+   "w": 390,
+   "h": 844,
+   "title": "3 · Confirma tu correo",
+   "is_interactive": true
+  },
+  "reg_04-telefono.dc.html": {
+   "x": 1410,
+   "y": 2980,
+   "w": 390,
+   "h": 844,
+   "title": "4 · Confirma tu teléfono",
+   "is_interactive": true
+  },
+  "reg_05-perfil.dc.html": {
+   "x": 1880,
+   "y": 2980,
+   "w": 390,
+   "h": 844,
+   "title": "5 · Completa tu perfil",
+   "is_interactive": true
+  },
+  "reg_06-cuenta-creada.dc.html": {
+   "x": 2350,
+   "y": 2980,
+   "w": 390,
+   "h": 844,
+   "title": "6 · Cuenta creada",
+   "is_interactive": true
+  },
+  "reg_07-verifica-cuenta.dc.html": {
+   "x": 0,
+   "y": 3944,
+   "w": 390,
+   "h": 844,
+   "title": "7 · Verifica tu cuenta",
+   "is_interactive": true
+  },
+  "reg_08b-documento-rechazado.dc.html": {
+   "x": 940,
+   "y": 4908,
+   "w": 390,
+   "h": 844,
+   "title": "8b · Documento rechazado",
+   "is_interactive": true
+  },
+  "reg_10-en-revision.dc.html": {
+   "x": 470,
+   "y": 3944,
+   "w": 390,
+   "h": 844,
+   "title": "10 · En revisión (pasajero)",
+   "is_interactive": true
+  },
+  "reg_11-verificado.dc.html": {
+   "x": 940,
+   "y": 3944,
+   "w": 390,
+   "h": 844,
+   "title": "11 · Pasajero verificado",
+   "is_interactive": true
+  },
+  "reg_12-papeles-conductor.dc.html": {
+   "x": 1410,
+   "y": 3944,
+   "w": 390,
+   "h": 844,
+   "title": "12 · Papeles de conductor y vehículo",
+   "is_interactive": true
+  },
+  "reg_13-revision-operador.dc.html": {
+   "x": 1880,
+   "y": 3944,
+   "w": 390,
+   "h": 844,
+   "title": "13 · Un operador está revisando",
+   "is_interactive": true
+  },
+  "reg_14-conductor-verificado.dc.html": {
+   "x": 2350,
+   "y": 3944,
+   "w": 390,
+   "h": 844,
+   "title": "14 · Conductor verificado",
+   "is_interactive": true
+  }
+ },
+ "createdOnFiles": {
+  "at": "2026-10-12T09:09:31.069Z",
+  "v": 1
+ },
+ "designSystems": [],
+ "launch": {
+  "view": "canvas"
+ },
+ "notes": {
+  "eje_t1": {
+   "kind": "title1",
+   "maxW": 3290,
+   "text": "P-04 · Conductor — abre, verifica, aborda y registra la llegada",
+   "w": 240,
+   "x": 0,
+   "y": 17040
+  },
+  "eje_t2": {
+   "kind": "title1",
+   "maxW": 3290,
+   "text": "P-04 · Pasajero — presenta su código, viaja seguro y confirma la llegada",
+   "w": 240,
+   "x": 0,
+   "y": 20464
+  },
+  "n_hub": {
+   "kind": "title1",
+   "maxW": 4150,
+   "text": "RUTA · Navegación principal — pasajero y conductor",
+   "w": 240,
+   "x": 0,
+   "y": -280
+  },
+  "n_sub": {
+   "kind": "title1",
+   "maxW": 1350,
+   "text": "Pasajero · perfil, cupones y pagos",
+   "w": 240,
+   "x": 1410,
+   "y": 1080
+  },
+  "pub_titulo1": {
+   "kind": "title1",
+   "maxW": 4150,
+   "text": "P-02 · Publicación de viaje — flujo principal",
+   "w": 240,
+   "x": 0,
+   "y": 24484
+  },
+  "pub_titulo2": {
+   "kind": "title1",
+   "maxW": 3680,
+   "text": "Variantes condicionales y errores (bajo su pantalla)",
+   "w": 240,
+   "x": 0,
+   "y": 26104
+  },
+  "reg_t1": {
+   "kind": "title1",
+   "maxW": 2740,
+   "text": "P-01 · Registro — cuenta y verificación de pasajero",
+   "w": 240,
+   "x": 0,
+   "y": 2700
+  },
+  "reg_t2": {
+   "kind": "title1",
+   "maxW": 2820,
+   "text": "P-12 · Verificación de acompañantes — enlace de un solo uso",
+   "w": 240,
+   "x": 0,
+   "y": 6152
+  },
+  "res_t1": {
+   "kind": "title1",
+   "maxW": 4150,
+   "text": "P-03 · Reserva y pago — búsqueda, selección y reserva",
+   "w": 240,
+   "x": 0,
+   "y": 9036
+  },
+  "res_t2": {
+   "kind": "title1",
+   "maxW": 4150,
+   "text": "Variantes y estados de rechazo (bajo su pantalla)",
+   "w": 240,
+   "x": 0,
+   "y": 10736
+  },
+  "wal_t1": {
+   "kind": "title1",
+   "maxW": 3680,
+   "text": "P-07 · Wallet del conductor — saldo, movimientos, recarga y retiro",
+   "w": 240,
+   "x": 0,
+   "y": 29892
+  },
+  "wal_t2": {
+   "kind": "title1",
+   "maxW": 3680,
+   "text": "Variantes, límites por deuda y recordatorios de cobro",
+   "w": 240,
+   "x": 0,
+   "y": 31312
+  },
+  "n_sub_c": {
+   "x": 3290,
+   "y": 1080,
+   "text": "Conductor · vehículo, documentos, cobro y preferencias",
+   "kind": "title1",
+   "maxW": 2280
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "hub_p_inicio.dc.html",
+  "hub_p_viajes.dc.html",
+  "hub_p_avisos.dc.html",
+  "hub_p_perfil.dc.html",
+  "hub_c_inicio.dc.html",
+  "hub_c_viajes.dc.html",
+  "hub_c_avisos.dc.html",
+  "hub_c_perfil.dc.html",
+  "reg_08-vehiculo.dc.html",
+  "reg_09-documentos.dc.html",
+  "reg_10-cobros.dc.html",
+  "reg_11-preferencias.dc.html",
+  "reg_09b-documento-vencido.dc.html",
+  "reg_A1-invitacion.dc.html",
+  "reg_A2-verificar.dc.html",
+  "reg_A3-codigo.dc.html",
+  "reg_A4-enlace-vencido.dc.html",
+  "reg_A5-recordatorio.dc.html",
+  "res_00-buscador.dc.html",
+  "res_01-resultados.dc.html",
+  "res_Main.dc.html",
+  "res_02-asientos.dc.html",
+  "res_03-metodo-pago.dc.html",
+  "res_04-resumen-tarjeta.dc.html",
+  "res_05-confirmada.dc.html",
+  "res_06-viajeros.dc.html",
+  "res_07-codigo.dc.html",
+  "res_00c-calendario.dc.html",
+  "res_01b-sin-resultados.dc.html",
+  "res_01b-identidad.dc.html",
+  "res_02b-sin-asientos.dc.html",
+  "res_03b-efectivo-no.dc.html",
+  "res_04b-resumen-efectivo.dc.html",
+  "res_05b-esperando.dc.html",
+  "res_06b-sin-verificar.dc.html",
+  "res_01c-filtros.dc.html",
+  "res_01c-mensaje.dc.html",
+  "res_04c-pago-rechazado.dc.html",
+  "res_05c-reembolso.dc.html",
+  "res_01d-mensaje-bloqueado.dc.html",
+  "res_01e-perfil-conductor.dc.html",
+  "eje_Main.dc.html",
+  "eje_02-facial.dc.html",
+  "eje_05-abordaje.dc.html",
+  "eje_07-abordado.dc.html",
+  "eje_09-en-curso.dc.html",
+  "eje_10-registrar-llegada.dc.html",
+  "eje_11-llegada.dc.html",
+  "eje_03-facial-fallo.dc.html",
+  "eje_06-escanear.dc.html",
+  "eje_08-marcar-ausente.dc.html",
+  "eje_12-reporte.dc.html",
+  "eje_04-bloqueado.dc.html",
+  "eje_P1-codigo.dc.html",
+  "eje_P4-en-curso.dc.html",
+  "eje_P6-sos.dc.html",
+  "eje_P8-confirmar.dc.html",
+  "eje_P2-no-llego.dc.html",
+  "eje_P5-compartir.dc.html",
+  "eje_P7-sos-enviada.dc.html",
+  "eje_P9-completado.dc.html",
+  "eje_P3-ausente.dc.html",
+  "pub_03-origen-destino.dc.html",
+  "pub_Main.dc.html",
+  "pub_04-punto-encuentro.dc.html",
+  "pub_07-fecha-hora.dc.html",
+  "pub_09-equipaje-reglas.dc.html",
+  "pub_11-precio.dc.html",
+  "pub_13-revision.dc.html",
+  "pub_14-publicado.dc.html",
+  "pub_01b-precondiciones-rechazo.dc.html",
+  "pub_02-vehiculo.dc.html",
+  "pub_04c-punto-parada.dc.html",
+  "pub_07b-solape-antelacion.dc.html",
+  "pub_10b-dato-contacto.dc.html",
+  "pub_11b-precio-sobre-tope.dc.html",
+  "pub_13b-documento-vence.dc.html",
+  "pub_03b-fuera-cobertura.dc.html",
+  "pub_04b-punto-fuera-radio.dc.html",
+  "pub_03d-parada-fuera-ruta.dc.html",
+  "pub_15-mi-viaje.dc.html",
+  "pub_03c-calendario.dc.html",
+  "wal_Main.dc.html",
+  "wal_02-movimientos.dc.html",
+  "wal_03-detalle-efectivo.dc.html",
+  "wal_04-recargar.dc.html",
+  "wal_05-recarga-ok.dc.html",
+  "wal_06-retirar.dc.html",
+  "wal_07-efectivo-bloqueado.dc.html",
+  "wal_08-recordatorio-cierre.dc.html",
+  "wal_01b-wallet-rojo.dc.html",
+  "wal_03b-detalle-digital.dc.html",
+  "wal_06b-retirar-bloqueado.dc.html",
+  "wal_07b-publicar-bloqueado.dc.html",
+  "wal_09-recordatorio-apertura.dc.html",
+  "eje_07b-abordado-efectivo.dc.html",
+  "eje_P10-reporte.dc.html",
+  "res_05d-cancelada.dc.html",
+  "hub_p_editar.dc.html",
+  "hub_p_cupones.dc.html",
+  "hub_p_pagos.dc.html",
+  "pub_16-reservas.dc.html",
+  "reg_02-correo.dc.html",
+  "reg_03-confirmar-correo.dc.html",
+  "reg_04-telefono.dc.html",
+  "reg_05-perfil.dc.html",
+  "reg_06-cuenta-creada.dc.html",
+  "reg_07-verifica-cuenta.dc.html",
+  "reg_08b-documento-rechazado.dc.html",
+  "reg_10-en-revision.dc.html",
+  "reg_11-verificado.dc.html",
+  "reg_12-papeles-conductor.dc.html",
+  "reg_13-revision-operador.dc.html",
+  "reg_14-conductor-verificado.dc.html"
+ ],
+ "pages": [],
+ "title": "RUTA · Prototipo integral"
+}
